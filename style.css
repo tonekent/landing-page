@@ -1,34 +1,58 @@
+body   {
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #1f2937;
     font-family: Roboto, sans-serif;
     padding: 50px;
+    gap: 40px;
+}
+
+.group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-around;
+}
+
+.group2 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-around;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
     display: flex;
-    justify-content: flex-start;
 }
 
 .links {
-    font-size: 18px;
+    font-size: 16px;
     color: #e5e7eb;
     text-decoration: none;
     display: flex;
     gap: 16px;
-    justify-content: flex-end;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
 }
 
 .su-title {
-    font-size: 48px;
+    font-size: 36px;
     color: #f9faf8;
 }
 
 .su-para {
-    font-size: 18px;
+    font-size: 16px;
     color: #e5e7eb;
 }
 
@@ -36,10 +60,16 @@
     background-color: #3882f6;
     color: #f9faf8;
     font-size: 18px;
+    height: 30px;
+    width: 100px;
+    border-radius: 2px;
 }
 
 .placeholder-image {
     background-color: #e5e7eb;
+    display: flex;
+    height: 200px;
+    width: 800px;
 }
 
 .section1 {
@@ -55,6 +85,29 @@
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin: 32px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.square {
+    background-color: #f9faf8;
+    border-style: solid;
+    border-color: #3882f6;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
 }
 
 .section2 {
@@ -80,20 +133,32 @@
 }
 
 .cta {
-    background-color: #f9faf8;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3882f6;
+    border-radius: 8px;
+    color: #f9faf8;
+    font-family: Roboto, sans-serif;
+    padding: 40px;
+    margin: 80px;
+    gap: 16px;
 }
 
 .sign-up2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 80px;
-    background-color: #3882f6;
-    border-radius: 8px;
-    color: #f9faf8;
-    font-family: Roboto, sans-serif;
+    align-items:flex-start;
 }
+
+.button2    {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    height: 30px;
+    width: 100px;
+    align-self: center;
+}      
 
 .footer {
     display: flex;
